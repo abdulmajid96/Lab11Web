@@ -6,6 +6,9 @@ class Home extends BaseController
 {
 	public function index()
 	{
-		return view('welcome_message');
+		return view('index_home', [
+            'title' => 'Halaman Home',
+            'content' => 'Ini adalah halaman home yang merupakan halaman utama.'
+        ]);
 	}
 }
