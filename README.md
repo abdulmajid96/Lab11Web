@@ -41,15 +41,15 @@ lalu masukan perintah PHP SPARK untuk memanggil CLI Codeigniter.
 ### Mengaktifkan Mode Debugging
 Untuk mengaktifkan mode debugging, kita harus mengubah environment variabel CI_ENVIRONMENT menjadi development.
 
-![3](https://github.com/abdulmajid96/Lab10Web/blob/main/SS/3.PNG)
+![3](https://github.com/abdulmajid96/Lab11Web/blob/main/SS/3.PNG)
 
 Setelah itu, ubah nama file env menjadi .env (tinggal tambah titik di depan).
 
 Untuk mencoba error tersebut, ubah kode pada file
 app/Controller/Home.php hilangkan titik koma pada akhir kode.
 
-![4](https://github.com/abdulmajid96/Lab10Web/blob/main/SS/4.PNG)
-![5](https://github.com/abdulmajid96/Lab10Web/blob/main/SS/5.PNG)
+![4](https://github.com/abdulmajid96/Lab11Web/blob/main/SS/4.PNG)
+![5](https://github.com/abdulmajid96/Lab11Web/blob/main/SS/5.PNG)
 
 ### Membuat Route Baru
 Tambahkan kode berikut di dalam Routes.php
@@ -63,11 +63,11 @@ perintah berikut.
 ```
 php spark routes
 ```
-![6](https://github.com/abdulmajid96/Lab10Web/blob/main/SS/6.PNG)
+![6](https://github.com/abdulmajid96/Lab11Web/blob/main/SS/6.PNG)
 
 Selanjutnya coba akses route yang telah dibuat dengan mengakses alamat url http://localhost/Lab11Web/ci4/public/about
 
-![7](https://github.com/abdulmajid96/Lab10Web/blob/main/SS/7.PNG)
+![7](https://github.com/abdulmajid96/Lab11Web/blob/main/SS/7.PNG)
 
 ### Membuat Controller
 Selanjutnya adalah membuat Controller Page. Buat file baru dengan nama page.php
@@ -92,7 +92,7 @@ class Page extends BaseController
 }
 ```
 Selanjutnya refresh Kembali browser.
-![8](https://github.com/abdulmajid96/Lab10Web/blob/main/SS/8.PNG)
+![8](https://github.com/abdulmajid96/Lab11Web/blob/main/SS/8.PNG)
 
 ### Auto Routing
 Secara default fitur autoroute pada Codeiginiter sudah aktif. Untuk mengubah status autoroute dapat mengubah nilai variabelnya. Untuk menonaktifkan ubah nilai true menjadi false.
@@ -108,7 +108,7 @@ public function tos()
 ```
 Method ini belum ada pada routing, sehingga cara mengaksesnya dengan menggunakan
 alamat: http://localhost/Lab11Web/ci4/public/page/tos
-![9](https://github.com/abdulmajid96/Lab10Web/blob/main/SS/9.PNG)
+![9](https://github.com/abdulmajid96/Lab11Web/blob/main/SS/9.PNG)
 
 ### Membuat View
 Selanjutnya adalam membuat view untuk tampilan web agar lebih menarik. Buat file
@@ -138,7 +138,7 @@ public function about()
         ]);
     }
 ```
-![10](https://github.com/abdulmajid96/Lab10Web/blob/main/SS/10.PNG)
+![10](https://github.com/abdulmajid96/Lab11Web/blob/main/SS/10.PNG)
 
 ### Membuat Layout Web dengan CSS
 Buat file css pada direktori public dengan nama style.css (copy file dari praktikum lab4_layout).
@@ -202,7 +202,7 @@ Kemudian ubah file app/view/about.php seperti berikut.
 <?= $this->include('template/footer'); ?>
 ```
 Selanjutnya refresh tampilan pada alamat http://localhost:8080/about
-![11](https://github.com/abdulmajid96/Lab10Web/blob/main/SS/11.PNG)
+![11](https://github.com/abdulmajid96/Lab11Web/blob/main/SS/11.PNG)
 
 ## Pertanyaan dan Tugas
 Lengkapi kode program untuk menu lainnya yang ada pada Controller Page, sehingga
@@ -238,7 +238,7 @@ class Home extends BaseController
 	}
 }
 ```
-![12](https://github.com/abdulmajid96/Lab10Web/blob/main/SS/12.PNG)
+![12](https://github.com/abdulmajid96/Lab11Web/blob/main/SS/12.PNG)
 
 ### Halaman Artikel
 Membuat file baru artikel.php (app/view/artikel.php).
@@ -261,7 +261,7 @@ public function artikel()
         ]);
     }
 ```
-![13](https://github.com/abdulmajid96/Lab10Web/blob/main/SS/13.PNG)
+![13](https://github.com/abdulmajid96/Lab11Web/blob/main/SS/13.PNG)
 
 ### Halaman Kontak
 Membuat file baru contact.php (app/view/contact.php).
@@ -284,4 +284,4 @@ public function contact()
         ]);
     }
 ```
-![14](https://github.com/abdulmajid96/Lab10Web/blob/main/SS/14.PNG)
+![14](https://github.com/abdulmajid96/Lab11Web/blob/main/SS/14.PNG)
